@@ -1,10 +1,10 @@
 # Your Code Here
-def my_own_map(map)
+def map(s)
   new = []
   i = 0
-  while i < map.length do
-    new.push( map[i] * -1 ) 
+  while i < s.length
+    new.push(yield(s[i]))
     i += 1
   end
-  return new
+  new
 end
