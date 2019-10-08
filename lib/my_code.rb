@@ -1,9 +1,9 @@
 # Your Code Here
-def my_own_map(source_array)
+def my_own_map(map)
   new = []
   i = 0
-  while i < source_array.length do
-    new.push( source_array[i] * -1 ) # <== Unique work
+  while i < map.length do
+    new.push( map[i] * -1 ) # <== Unique work
     i += 1
   end
   return new
